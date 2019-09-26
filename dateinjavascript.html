@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date</title>
+    <style>
+        body {
+            background-color:aqua;
+        }
+        button {
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width:300px;
+            height:50px;
+            border-radius:50px;
+            outline: none;
+            background:transparent;
+            border: 2px solid rgb(230, 29, 29);
+            color:rgb(230,29,29);
+            font-size:20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        button:hover{
+            background-color:#fff;
+            transition: ease 0.8s;
+        }
+        p{
+            position:absolute;
+            top:60%;
+            left:50%;
+            transform: translate(-40%,-50%);
+            color:#fff;
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <button id="but" onclick="document.getElementById('demo').innerHTML = Date()">Click Here to display time</button>
+    <p id="demo"></p>
+</body>
+</html>
