@@ -1,0 +1,133 @@
+@import url('htpps://fonts.google.apis.com/css? family=Lobster');
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.head{
+    background-color:#FF4848;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:50%;
+    border-bottom:2px solid #2B2B52;
+}
+.container{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    
+}
+
+.container span{
+    display: block;
+}
+.txt1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700px;
+    font-family: Lobster;
+    letter-spacing: 8px;
+    background:#FF4848;
+    margin-bottom: 20px;
+    position:relative;
+    animation: anima 4.5s;
+}
+.txt2{
+    color:#fff;
+    font-size: 60px;
+    font-family: Lobster;
+    font-weight: 700px;
+    letter-spacing: 8px;
+}
+@keyframes anima{
+    0%{
+        color:#FF4848;
+       margin-bottom:100px;
+    }
+    25%{
+        letter-spacing: 20px;
+    }
+}
+.filling{
+    
+    background-color: #FF4848;
+    position: absolute;
+    top:100%;
+    left:50%;
+    width:300px;
+    height:500px;
+    transform: translate(-50%,-50%);
+    border-radius:20px;
+    padding:50px;
+    box-shadow: 1px 1px 28px #000000;
+    border:2px solid #2B2B52;
+    
+    
+}
+.info p{
+    color:#fff;
+    text-align: center;
+    font-size:18px;
+    margin-bottom:10px;
+    letter-spacing: 3px;
+}
+.info label{
+    color:#fff;
+    margin-top:50px;
+    font-size:18px;
+    font-family: sans-serif;
+   
+}
+input{
+    font-family:sans-serif;
+    width:100%;
+    padding:12px 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border:2px solid #0A79DF;
+    border-radius:10px;
+    outline:none;
+}
+button{
+    font-size:16px;
+    font-family:sans-serif;
+    background-color: #2B2B52;
+    color:#fff;
+    width:100%;
+    padding:12px 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 2px solid #ff0000;
+    border-radius:20px;
+    outline:none;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#F9DDA4;
+    transition: ease 1.5s;
+    color:#2B2B52;
+}
+
+
+footer{
+    background-color:#FF4848;
+    position:absolute;
+    top:150%;
+    left:0;
+    width:100%;
+    height:200px;
+    border-top:2px solid #2B2B52;
+}
+footer p{
+    color:#fff;
+    font-size:18px;
+    font-weight:10px;
+    margin-top:80px;    
+    text-align: center;
+}
