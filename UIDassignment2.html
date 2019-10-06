@@ -9,19 +9,45 @@
 </head>
 <body>
     <header>
+            <div class="penguin">
+                    <div class="penguin-bottom">
+                      <div class="right-hand"></div>
+                      <div class="left-hand"></div>
+                      <div class="right-feet"></div>
+                      <div class="left-feet"></div>
+                    </div>
+                    <div class="penguin-top">
+                      <div class="right-cheek"></div>
+                      <div class="left-cheek"></div>
+                      <div class="belly"></div>
+                      <div class="right-eye">
+                        <div class="sparkle"></div>
+                      </div>
+                      <div class="left-eye">
+                        <div class="sparkle"></div>
+                      </div>
+                      <div class="blush-right"></div>
+                      <div class="blush-left"></div>
+                      <div class="beak-top"></div>
+                      <div class="beak-bottom"></div>
+                    </div>
+                  </div>
         <div class="container"><span class="txt1">USER INTERFACE DESIGN</span>
             <span class="txt2">ASSIGNMENT II</span></div>
     </header>
+    <div class="logo"><h1>UID</h1></div>
     <form action="/" class="applicationform">
     <label for="name">Name
-        <input type="text" id="name">
-    </label>
+        <input type="text" id="name" placeholder="Name...">
+    </label><br/>
     <label for="password">Password
-        <input type="password" name="pas" id="password">
+        <input type="password" name="pas" id="password" placeholder="Password..." onblur="passwordChecking(this.value)">
     </label>
+    <br/>
     <label for="confirmPassword">Confirm Password
-        <input type="password" name="pass" id="confirmPassword">
+        <input type="password" name="pass" id="confirmPassword" placeholder="Password..." onblur="confirmPassword(this.value)">
     </label>
+    <br/>
     <label for="city">City
         <select name="nameofthecity" id="city">
             <option value="select">Select City</option>
@@ -31,15 +57,19 @@
             <option value="Guwahati">Guwahati</option>
             <option value="Bangalore">Bangalore</option>
         </select>
-    </label>
+    </label><br/>
     <label for="gender">Gender
         <input type="radio"  id="male" name="male" id="gender" value="male">Male
-       <input type="radio" id="female" name="female" id="gender" value="female">Female
-    </label>
+        <input type="radio" id="female" name="female" id="gender" value="female">Female
+    </label><br/>
     <label for="mail">Gmail
-        <input type="email" id="mail">
-    </label>
+        <input type="email" id="mail1" placeholder="Email..." onblur="email(value)">
+    </label><br/>
     <button id="but">Submit</button>
     </form>
+    <footer>
+        <p>Design by Rangkynsai Saio | &copy; 2019 |</p>
+    </footer>
+    <script src="UIDassignment.js"></script>
 </body>
 </html>
